@@ -1,19 +1,18 @@
 const insert = document.getElementById('insert');
 
-window.addEventListener('keydown', (event) => {
-	insert.innerHTML = `
-	<div class="key"> 
-		${ event.key === ' ' ? 'Space' : event.key }   
+window.addEventListener('keydown', (e) => {
+	insert.innerHTML = `<div class="key">
+	a
 	<small>event.key</small>
 	</div>
 
 	<div class="key">
-		${ event.keyCode}
+		65
 		<small>event.key</small>
 	</div>
- 
+
 	<div class="key">
-		${event.code}
+		KeyA
 		<small>event.code</small>
 	</div>`
 })
